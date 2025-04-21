@@ -18,7 +18,7 @@ export default function Home() {
         <p>Your page content goes here.</p>
       </main>
       <footer className='w-full'>
-        <ul className='flex justify-around p-5'>
+        <ul className='flex justify-around'>
             <li><a href="#Facebook">Facebook</a></li>
             <li><a href="#Instagram">Instagram</a></li>
             <li><a href="#LinkedIn">LinkedIn</a></li>
