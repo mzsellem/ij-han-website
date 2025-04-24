@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function Navbar() {
+export default function HomeNavbar() {
     return (
     <header className='w-full'>
             <nav>
+            <h1 className='text-3xl'>Justin "IJ" Han</h1>
             <ul className='flex justify-around'>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
