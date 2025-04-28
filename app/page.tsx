@@ -3,21 +3,21 @@ import HomeNavbar from './home-navbar';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <HomeNavbar />
-      <main className='flex flex-col items-center justify-center'>
+      <main className="flex flex-col items-center justify-center mt-8"> {/* Added margin-top */}
         <div>
-          <img src="ij-serious-conductor.png"></img>
-          <img src="ij-holds-piano.png"></img>
-          <img src="ij-baton-head.png"></img>
+          <img src="ij-serious-baton.png" alt="Serious Baton" />
+          <img src="ij-hold-piano.png" alt="Hold Piano" />
+          <img src="ij-baton-head.png" alt="Baton Head" />
         </div>
       </main>
-      <footer className='w-full'>
-        <ul className='flex justify-around'>
-            <li><a href="#Facebook">Facebook</a></li>
-            <li><a href="#Instagram">Instagram</a></li>
-            <li><a href="#LinkedIn">LinkedIn</a></li>
-          </ul>
+      <footer className="w-full">
+        <ul className="flex justify-around">
+          <li><a href="#Facebook">Facebook</a></li>
+          <li><a href="#Instagram">Instagram</a></li>
+          <li><a href="#LinkedIn">LinkedIn</a></li>
+        </ul>
       </footer>
     </div>
   );
