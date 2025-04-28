@@ -13,7 +13,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="w-full">
-        <ul className="flex justify-around">
+        <ul className="flex justify-center space-x-2">
           <li><a href="#Facebook">Facebook</a></li>
           <li><a href="#Instagram">Instagram</a></li>
           <li><a href="#LinkedIn">LinkedIn</a></li>
