@@ -1,20 +1,46 @@
-import React from 'react';
-import HomeNavbar from './home-navbar';
+"use client";
+import React, { useEffect, useState } from "react";
+import HomeNavbar from "./home-navbar";
+
+const images = [
+  "ij-serious-baton.png",
+  "ij-hold-piano.png",
+  "ij-baton-head.png",
+];
 
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <HomeNavbar />
-      <main className="flex flex-col sm:flex-row items-start justify-center gap-8 px-6 sm:px-12 py-8 w-full max-w-7xl">
-        {/* Left column: Images */}
-        <div className="flex flex-col sm:flex-row sm:overflow-x-auto sm:space-x-8 space-y-8 sm:space-y-0 items-center sm:items-start sm:w-1/2 w-full">
-          <img src="ij-serious-baton.png" alt="Serious Baton" className="rounded-2xl w-64 shrink-0" />
-          <img src="ij-hold-piano.png" alt="Hold Piano" className="rounded-2xl w-64 shrink-0" />
-          <img src="ij-baton-head.png" alt="Baton Head" className="rounded-2xl w-64 shrink-0" />
+      <main className="flex flex-col sm:flex-row items-start justify-center gap-8 px-6 sm:px-12 py-8 w-2/3 max-w-7xl">
+        {/* Left column: Image Carousel */}
+        <div className="sm:w-1/2 w-full overflow-hidden relative rounded-2xl">
+          <div
+            className="flex transition-transform duration-700 ease-in-out h-full"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {images.map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt=""
+                className="w-full h-full object-cover flex-shrink-0"
+              />
+            ))}
+          </div>
         </div>
 
-
-        {/* Right column: Text content */}
+        {/* Right column: Text */}
         <div className="sm:w-1/2 w-full text-center sm:text-left">
           <h2 className="text-2xl font-semibold mb-4">About the Series</h2>
           <p className="mb-4">
