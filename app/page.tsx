@@ -10,10 +10,15 @@ const images = [
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
+      setFade(false); // start fade out
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % images.length);
+        setFade(true); // fade in new image
+      }, 3000); // fade out duration
     }, 3000);
 
     return () => clearInterval(interval);
@@ -23,21 +28,16 @@ export default function Home() {
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <HomeNavbar />
       <main className="flex flex-col sm:flex-row items-start justify-center gap-8 px-6 sm:px-12 py-8 w-2/3 max-w-7xl">
-        {/* Left column: Image Carousel */}
+        {/* Left column: Image Fade Carousel */}
         <div className="sm:w-1/2 w-full overflow-hidden relative rounded-2xl">
-          <div
-            className="flex transition-transform duration-700 ease-in-out h-full"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {images.map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt="Three Scrolling pictures of Justin"
-                className="w-full h-full object-cover flex-shrink-0"
-              />
-            ))}
-          </div>
+          <img
+            key={currentIndex}
+            src={images[currentIndex]}
+            alt="Three Scrolling pictures of Justin"
+            className={`w-full h-full object-cover rounded-2xl transition-opacity duration-3000 ${
+              fade ? "opacity-100" : "opacity-0"
+            }`}
+          />
         </div>
 
         {/* Right column: Text */}
