@@ -33,7 +33,7 @@ export default function Home() {
               <img
                 key={i}
                 src={src}
-                alt=""
+                alt="Three Scrolling pictures of Justin"
                 className="w-full h-full object-cover flex-shrink-0"
               />
             ))}
