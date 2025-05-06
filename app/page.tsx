@@ -41,17 +41,20 @@ export default function Home() {
         </div>
 
         {/* Right column: Text */}
-        <div className="sm:w-1/2 w-full text-center sm:text-left">
-          <h2 className="text-2xl font-semibold mb-4">About the Series</h2>
+        <div className="sm:w-1/2 w-full text-center sm:text-left space-y-4">
+          <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
           <p className="mb-4">
-            This photo series explores the emotional landscape of a conductor in rehearsal and performance.
+            Justin is a consummate professional, a true artist, and a wonderful human being. He is a joy to work with and an inspiration to be around.
           </p>
+          <p className="text-end">- New York Times</p>
           <p className="mb-4">
-            Each image captures an intimate moment of intensity, vulnerability, or connection.
+          With masterful precision and heartfelt expression, Justin IJ Han transforms every performance into a profound musical journey that resonates long after the final note.
           </p>
+          <p className="text-end">- Alpharetta Symphony Orchestra</p>
           <p>
-            The visual narrative invites the viewer to consider the hidden dynamics behind musical leadership.
+          Justin`s leadership on the podium brings clarity, passion, and cohesion, elevating the ensemble to deliver performances of extraordinary depth and artistry.          
           </p>
+          <p className="text-end">- Emory Presbysterian Church</p>
         </div>
       </main>
 
