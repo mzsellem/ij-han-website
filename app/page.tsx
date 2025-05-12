@@ -47,7 +47,7 @@ export default function Home() {
             The group`s new conductor, Justin Han, is taking the group in an exciting direction in his inaugural year. [He is] young, talented and ambitious.
           </p>
           <p className="text-end">
-            <a href="https://flagpole.com/music/music-features/2025/05/07/new-director-of-athens-master-chorale-brings-fresh-voices-and-concepts/?fbclid=IwY2xjawKPJW5leHRuA2FlbQIxMQBicmlkETExZ3NqUWJ3ME9nR1J0SHU0AR5xuhUpUVQXq4j3vlhNOEDgXuw1SOQOndUvsrgz2zItm9K50jTq-1lWR30PXg_aem_otdnw9aqmj2p7yEYSalfqg" target="_blank" className="hover:underline">
+            <a href="https://flagpole.com/music/music-features/2025/05/07/new-director-of-athens-master-chorale-brings-fresh-voices-and-concepts/?fbclid=IwY2xjawKPJW5leHRuA2FlbQIxMQBicmlkETExZ3NqUWJ3ME9nR1J0SHU0AR5xuhUpUVQXq4j3vlhNOEDgXuw1SOQOndUvsrgz2zItm9K50jTq-1lWR30PXg_aem_otdnw9aqmj2p7yEYSalfqg" target="_blank" rel="noopener noreferrer" className="hover:underline">
               - Flagpole Magazine Athens, GA
             </a>
           </p>
