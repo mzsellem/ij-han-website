@@ -44,7 +44,7 @@ export default function Home() {
         <div className="sm:w-1/2 w-full text-center sm:text-left space-y-4">
           <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
           <p className="mb-4">
-            The group`s new conductor, Justin Han, is taking the group in an exciting direction in his inaugural year. [He is] Young, talented and ambitious.
+            The group`s new conductor, Justin Han, is taking the group in an exciting direction in his inaugural year. [He is] young, talented and ambitious.
           </p>
           <p className="text-end">- Flagpole Magazine Athens, GA</p>
           <p className="mb-4">
