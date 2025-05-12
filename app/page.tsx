@@ -44,9 +44,9 @@ export default function Home() {
         <div className="sm:w-1/2 w-full text-center sm:text-left space-y-4">
           <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
           <p className="mb-4">
-            Justin is a consummate professional, a true artist, and a wonderful human being. He is a joy to work with and an inspiration to be around.
+            The group`s new conductor, Justin Han, is taking the group in an exciting direction in his inaugural year. [He is] Young, talented and ambitious.
           </p>
-          <p className="text-end">- New York Times</p>
+          <p className="text-end">- Flagpole Magazine Athens, GA</p>
           <p className="mb-4">
           With masterful precision and heartfelt expression, Justin IJ Han transforms every performance into a profound musical journey that resonates long after the final note.
           </p>
