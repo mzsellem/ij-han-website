@@ -47,7 +47,7 @@ export default function Home() {
           <p className="mb-4">
             The group`s new conductor, Justin Han, is taking the group in an exciting direction in his inaugural year. [He is] young, talented and ambitious.
           </p>
-          <p className="text-end">
+          <p className="text-center sm:text-right">
             <a href="https://flagpole.com/music/music-features/2025/05/07/new-director-of-athens-master-chorale-brings-fresh-voices-and-concepts/?fbclid=IwY2xjawKPJW5leHRuA2FlbQIxMQBicmlkETExZ3NqUWJ3ME9nR1J0SHU0AR5xuhUpUVQXq4j3vlhNOEDgXuw1SOQOndUvsrgz2zItm9K50jTq-1lWR30PXg_aem_otdnw9aqmj2p7yEYSalfqg" target="_blank" rel="noopener noreferrer" className="hover:underline">
               - Flagpole Magazine Athens, GA
             </a>
@@ -55,11 +55,11 @@ export default function Home() {
           <p className="mb-4">
           With masterful precision and heartfelt expression, Justin IJ Han transforms every performance into a profound musical journey that resonates long after the final note.
           </p>
-          <p className="text-end">- Alpharetta Symphony Orchestra</p>
+          <p className="text-center sm:text-right">- Alpharetta Symphony Orchestra</p>
           <p>
           Justin`s leadership on the podium brings clarity, passion, and cohesion, elevating the ensemble to deliver performances of extraordinary depth and artistry.          
           </p>
-          <p className="text-end">- Emory Presbysterian Church</p>
+          <p className="text-center sm:text-right">- Emory Presbysterian Church</p>
         </div>
       </main>
 
