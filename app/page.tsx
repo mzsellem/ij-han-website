@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <HomeNavbar />
-      <main className="flex flex-col sm:flex-row items-start justify-center gap-8 px-6 sm:px-12 py-8 w-2/3 max-w-7xl">
+      <main className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:px-12 py-8 w-2/3 max-w-7xl">
         {/* Left column: Image Fade Carousel */}
         <div className="sm:w-1/2 w-full overflow-hidden relative rounded-2xl">
           <img
@@ -63,7 +63,7 @@ export default function Home() {
       </main>
 
       <footer className="w-full">
-        <ul className="flex justify-center space-x-2">
+        <ul className="flex justify-center space-x-2 text-xl">
           <li><a href="#Facebook">Facebook</a></li>
           <li><a href="#Instagram">Instagram</a></li>
           <li><a href="#LinkedIn">LinkedIn</a></li>
