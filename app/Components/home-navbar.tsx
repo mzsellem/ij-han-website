@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import Link from 'next/link';
 
 export default function HomeNavbar() {
   return (
@@ -6,11 +9,12 @@ export default function HomeNavbar() {
       <nav className="flex flex-col sm:flex-row items-center sm:justify-between ml-5 mr-5">
         <h1 className="text-3xl sm:text-5xl p-2">Justin "IJ" Han</h1>
         <ul className="flex flex-row sm:flex-row justify-center sm:justify-end sm:space-x-10 space-x-6 text-xl">
-          <li><a href="#Home" className="hover:underline">Home</a></li>
-          <li><a href="#About" className="hover:underline">About</a></li>
-          <li><a href="#Media" className="hover:underline">Media</a></li>
-          <li><a href="#Engagements" className="hover:underline">Engagements</a></li>
-          <li><a href="#Contact" className="hover:underline">Contact</a></li>
+          <li><Link href="/" className="hover:underline">Home</Link></li>
+          <li><Link href="/about" className="hover:underline">About</Link></li>
+          <li><Link href="/media" className="hover:underline">Media</Link></li>
+          <li><Link href="/engagements" className="hover:underline">Engagements</Link></li>
+          <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+          
         </ul>
       </nav>
     </header>

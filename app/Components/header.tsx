@@ -1,15 +1,16 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
     return (
     <header className="w-full">
             <nav>
             <ul className="flex justify-around">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Media">Media</a></li>
-                <li><a href="#Engagements">Engagements</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/media">Media</Link></li>
+                <li><Link href="/engagements">Engagements</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
             </ul>
             </nav>
     </header>
