@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import HomeNavbar from "./home-navbar";
-import Footer from "./footer";
+import HomeNavbar from "../Components/home-navbar";
+import Footer from "../Components/footer";
 
 const images = [
   "ij-serious-baton.png",
@@ -9,7 +9,7 @@ const images = [
   "ij-baton-head.png",
 ];
 
-export default function Home() {
+export default function HomePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
