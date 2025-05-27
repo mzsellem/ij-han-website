@@ -14,7 +14,7 @@ export default function HomeNavbar() {
           <li><Link href="/media"><span className="hover:underline">Media</span></Link></li>
           <li><Link href="/engagements"><span className="hover:underline">Engagements</span></Link></li>
           <li><Link href="/contact"><span className="hover:underline">Contact</span></Link></li>
-          
+
         </ul>
       </nav>
     </header>
