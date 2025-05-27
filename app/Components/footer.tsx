@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Footer() {
     return (
 <footer className="w-full">
-  <h1 className="font-bold">Connect</h1>
+  <h1 className="font-bold mb-2">Connect</h1>
 <ul className="flex justify-center space-x-4 text-xl">
   <li>
     <a href="https://www.facebook.com/maestro.han2">
