@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* Right column: Text */}
         <div className="sm:w-1/2 w-full text-center sm:text-left space-y-4">
-          <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
+          <h2 className="text-2xl font-semibold mb-4 border-b-2 border-white w-full pb-2 inline-block">Testimonials</h2>
           <p className="mb-4">
             The group`s new conductor, Justin Han, is taking the group in an exciting direction in his inaugural year. [He is] young, talented and ambitious.
           </p>
