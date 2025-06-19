@@ -11,8 +11,8 @@ export default function Footer() {
       <Image
       src="/fb-round.svg"
       alt="Facebook Icon"
-      width={40}
-      height={40}
+      width={30}
+      height={30}
       style={{ objectFit: 'cover' }}
       />
     </a>
@@ -22,8 +22,8 @@ export default function Footer() {
       <Image
       src="/insta-round.svg"
       alt="Facebook Icon"
-      width={40}
-      height={40}
+      width={30}
+      height={30}
       style={{ objectFit: 'cover' }}
       />
     </a>
@@ -33,8 +33,8 @@ export default function Footer() {
       <Image
       src="/linkedin-round.svg"
       alt="Facebook Icon"
-      width={40}
-      height={40}
+      width={30}
+      height={30}
       style={{ objectFit: 'cover' }}
       />
     </a>
