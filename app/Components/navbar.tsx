@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
     <header className="w-full">
             <nav>
-            <ul className="flex justify-around">
+            <ul className="flex justify-center space-x-10">
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about">About</Link></li>
                 <li><Link href="/media">Media</Link></li>
