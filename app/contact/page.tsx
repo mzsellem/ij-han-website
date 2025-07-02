@@ -6,7 +6,7 @@ export default function ContactPage() {
     return (
       <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
         <Navbar/>
-        <main className="sm:w-2/3 w-full flex flex-col items-center gap-y-4 text-xl mt-16">
+        <main className="sm:w-2/3 w-full flex flex-col items-center gap-y-4 text-xl">
           <h1 className="text-center text-3xl font-semibold mb-4 border-b-2 border-white w-1/2 pb-2 inline-block">
             Get in Touch
           </h1>
