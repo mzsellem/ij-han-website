@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import HomeNavbar from "./Components/home-navbar";
 import Footer from "./Components/footer";
 
+//comment here for github push testing
 const images = [
   "ij-serious-baton.png",
   "ij-hold-piano.png",
