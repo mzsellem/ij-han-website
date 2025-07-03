@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import HomeNavbar from "./Components/home-navbar";
-import Footer from "./Components/footer";
 
 const images = [
   "ij-serious-baton.png",
@@ -26,8 +24,6 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <HomeNavbar />
       <main className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:px-12 py-8 w-2/3 max-w-7xl">
         {/* Left column: Image Fade Carousel */}
         <div className="sm:w-1/2 w-full overflow-hidden relative rounded-2xl">
@@ -62,8 +58,5 @@ export default function Home() {
           <p className="text-center sm:text-right">- Emory Presbysterian Church</p>
         </div>
       </main>
-
-      <Footer />
-    </div>
   );
 }

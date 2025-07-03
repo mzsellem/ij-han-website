@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '../Components/navbar'
-import Footer from '../Components/footer';
 
 export default function EngagementsPage() {
 const events = [
@@ -20,8 +18,6 @@ const events = [
   ];
 
     return (
-      <main>
-      <Navbar />
         <div className="min-h-screen px-4 py-8 font-[family-name:var(--font-geist-sans)]">
         <h1 className="text-3xl font-bold text-center mb-8 border-b-2 border-white w-fit mx-auto pb-2">
           Upcoming Events
@@ -51,7 +47,5 @@ const events = [
           ))}
         </div>
       </div>
-       <Footer />
-    </main>
     );
   }
