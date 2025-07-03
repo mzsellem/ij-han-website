@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutPage() {
     return (
-        <main className="flex-grow sm:w-2/3 mx-auto flex flex-col items-center gap-y-4 text-xl mt-8">
+        <div className="flex-grow sm:w-2/3 mx-auto flex flex-col items-center gap-y-4 text-xl mt-8">
           <h1 className="text-center text-3xl font-semibold mb-4 border-b-2 border-white w-1/2 pb-2 inline-block">
             About Me
           </h1>
@@ -33,6 +33,6 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </main>
+        </div>
     );
   }

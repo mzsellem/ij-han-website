@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-      <main className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:px-12 py-8 w-2/3 max-w-7xl">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:px-12 py-8 w-2/3 max-w-7xl">
         {/* Left column: Image Fade Carousel */}
         <div className="sm:w-1/2 w-full overflow-hidden relative rounded-2xl">
           <img
@@ -57,6 +57,6 @@ export default function Home() {
           </p>
           <p className="text-center sm:text-right">- Emory Presbysterian Church</p>
         </div>
-      </main>
+      </div>
   );
 }
