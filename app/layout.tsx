@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
 import { Playfair_Display } from 'next/font/google';
+import Navbar from "./Components/navbar";
+import Footer from "./Components/footer";
 
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-});
+// const playfair = Playfair_Display({
+//   subsets: ['latin'],
+//   weight: ['400', '700'],
+//   style: ['normal', 'italic'],
+//   display: 'swap',
+// });
 
 export const metadata: Metadata = {
   title: "IJ-Han-Website",
@@ -23,9 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={playfair.className}
+        className="min-h-screen font-[family-name:var(--font-geist-sans)] flex flex-col items-center"
       >
-        {children}
+        <div className="w-full"> <Navbar /> </div>
+        <main className="flex-1 w-full flex flex-col items-center">
+          {children}
+        </main>
+        <div className="w-full"> <Footer /> </div>
       </body>
     </html>
   );
