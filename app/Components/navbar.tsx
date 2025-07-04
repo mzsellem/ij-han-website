@@ -49,7 +49,7 @@ export default function SidebarNav() {
 
         {/* Desktop Footer */}
         <div className="pt-10">
-          <Footer size="md" />
+          <Footer />
         </div>
       </aside>
 
@@ -75,7 +75,7 @@ export default function SidebarNav() {
 
           {/* Mobile Footer */}
           <div className="mt-10">
-            <Footer size="sm" />
+            <Footer />
           </div>
         </div>
       )}

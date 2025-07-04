@@ -1,10 +1,9 @@
 import React from "react";
 
 export default function Footer() {
-
   return (
-    <footer className="w-full">
-      <ul className="flex space-x-4 items-center text-[#333]">
+    <div>
+      <ul className="flex space-x-3 items-center text-[#333]">
         <li>
           <a
             href="https://www.youtube.com/@justinhan7547"
@@ -15,8 +14,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -34,8 +33,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -53,8 +52,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -72,8 +71,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -82,6 +81,6 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-    </footer>
+    </div>
   );
 }
