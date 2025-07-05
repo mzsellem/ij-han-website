@@ -20,16 +20,15 @@ export default function SidebarNav() {
   return (
     <>
       {/* Mobile Menu Button */}
-      <div className="md:hidden fixed top-4 left-4 z-50">
+      <div className="sm:hidden fixed top-4 left-4 z-50">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Sidebar - Desktop */}
-      <aside className="hidden md:flex fixed top-0 left-0 h-screen w-64 bg-white/70 backdrop-blur-lg shadow-lg px-6 py-8 flex-col justify-between font-serif z-40">
+      <aside className="hidden sm:flex fixed top-0 left-0 h-screen w-54 bg-white/70 backdrop-blur-lg shadow-lg px-6 py-8 flex-col justify-between font-serif z-40">
         <div>
-          <h1 className="text-2xl font-semibold mb-12">Justin "IJ" Han</h1>
           <nav className="space-y-6 text-lg">
             {navLinks.map((link) => (
               <Link

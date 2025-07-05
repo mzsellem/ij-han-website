@@ -24,8 +24,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="sm:ml-64 flex justify-center p-8 min-h-screen">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:px-12 py-8 w-2/3 max-w-7xl">
+    <main className="sm:ml-56 flex flex-col justify-center items-center p-8 min-h-screen">
+      <h1 className="text-2xl font-semibold">Justin "IJ" Han</h1>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:px-12 py-8 max-w-7xl">
         {/* Left column: Image Fade Carousel */}
         <div className="sm:w-1/2 w-full overflow-hidden relative rounded-2xl">
           <img
