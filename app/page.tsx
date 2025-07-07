@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         {/* Right column: Text */}
-        <div className="sm:w-1/2 w-full flex flex-col space-y-8 text-xl text-left">
+        <div className="sm:w-1/2 w-full flex flex-col space-y-8 text-xl sm:text-left text-center">
           <h1 className="text-3xl font-semibold mb-4 border-b-2 border-white w-full pb-2 inline-block">
             Testimonials
           </h1>
