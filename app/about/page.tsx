@@ -2,20 +2,21 @@ import React from 'react';
 
 export default function AboutPage() {
     return (
-      <main className="sm:ml-64 flex justify-center p-8 min-h-screen">
-        <div className="flex-grow sm:w-2/3 mx-auto flex flex-col items-center gap-y-4 text-xl mt-8">
-          <h1 className="text-center text-3xl font-semibold mb-4 border-b-2 border-white w-1/2 pb-2 inline-block">
-            About Me
-          </h1>
-          <div className="sm:flex-row flex flex-col items-center sm:space-x-10 space-y-6">
-            <div className="flex w-1/2">
+      <main className="flex items-center sm:ml-64 p-15 min-h-screen">
+        <div className="flex flex-col items-center gap-y-4 text-xl sm:text-left text-center px-4">
+          <div className="sm:flex-row flex flex-col sm:space-x-17 space-y-6">
+            <div className="w-1/2">
               <img
               src="ij-mozart.png"
               alt="Relax Picture of Justin"
               className={`object-cover rounded-2xl`}
+              width="90%"
             />
             </div>
             <div className="w-1/2 space-y-5">
+            <h1 className="text-left text-3xl font-semibold mb-6 border-b-2 border-white w-1/3 pb-2 inline-block">
+            About Me
+          </h1>
               <p>
                 A native of both South Korea and Georgia, Mr. Justin Han is a professional pianist, conductor, singer, 
                 and violinist in the Atlanta area. Justin is a graduate of Georgia State University, where he earned a 
