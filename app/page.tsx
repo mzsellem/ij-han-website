@@ -47,10 +47,10 @@ export default function Home() {
   return (
     <> 
     <main className="sm:ml-56 flex flex-col justify-center items-center p-15">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-20 sm:px-12 py-8 max-w-7xl">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-10 sm:px-12 py-8 max-w-7xl">
         {/* Left column: Image Fade Carousel */}
         <div className="flex flex-col items-center">
-          <h1 className="text-4xl font-semibold mb-5">Justin "IJ" Han</h1>
+          <h1 className="text-4xl font-semibold mb-8">Justin "IJ" Han</h1>
           <div className="w-full max-w-md rounded-2xl">
             <img
               key={currentIndex}
