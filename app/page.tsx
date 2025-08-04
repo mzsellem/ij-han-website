@@ -66,12 +66,12 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         aria-label="Hero Section"
-        className="relative z-10 flex items-start justify-start h-screen text-center px-6"
+        className="relative z-10 flex items-start sm:justify-start justify-center h-screen text-center px-6 mt-6"
       >
         {/* Optional translucent overlay to keep text readable */}
         <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-        <h1 className="relative z-10 text-white text-5xl md:text-7xl font-bold drop-shadow-lg mt-10 ml-66">
+        <h1 className="relative z-10 text-white text-5xl md:text-7xl font-bold drop-shadow-lg sm:mt-10 sm:ml-66">
           Justin "IJ" Han
         </h1>
       </section>
