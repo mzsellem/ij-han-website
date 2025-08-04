@@ -17,20 +17,35 @@ export default function AboutPage() {
               About Me
               </h1>
               <p>
-                A native of both South Korea and Georgia, Mr. Justin Han is a professional pianist, conductor, singer, 
-                and violinist in the Atlanta area. Justin is a graduate of Georgia State University, where he earned a 
-                double Master’s degree in choral conducting and piano performance and was a recipient of the Robert Shaw
-                Choral Scholar Award and Stegner Piano Scholarship. 
+                Known for his thoughtful musicianship and interpretive depth, Justin Han has been praised by EarRelevant
+                for his “well-paced and sensitive reading” of Mozart. He is an American Prize Finalist conductor, pianist,
+                and singer based in Atlanta. He serves as the Artistic Director of the Athens Master Chorale and Director 
+                of Music & Organist at Emory Presbyterian Church.
               </p>
               <p>
-                Before joining Emory Presbyterian Church in January 2020, Justin held music director and organist positions
-                at Johns Creek Presbyterian Church, Commerce Presbyterian Church, Greensboro First United Methodist Church,
-                and Our Hope Metropolitan Community Church. He also currently works as a piano instructor at Silva Piano Studios
-                in Marietta, GA. 
+                Beyond music, he is a multidisciplinary individual with a strong foundation in the sciences and is also a
+                Lecturer of Biology at Georgia State University Perimeter College. With a deep love for Baroque music and the
+                works of Mozart and Ravel, Justin finds joy in bringing music to life—whether conducting, accompanying, or 
+                performing. In June 2023, he presented an all-Mozart recital, performing as a soloist in Piano Concerto No. 
+                21. He has appeared as a guest conductor for the Alpharetta Symphony Orchestra and frequently sings with 
+                professional ensembles such as the Kinnara Ensemble and Coro Vocati. 
               </p>
               <p>
-                When he isn’t doing music, Justin enjoys cooking international cuisines and playing with his two cats, Presto 
-                and Melody.
+                A sought-after accompanist, he regularly collaborates with K–12 schools, universities, and professional 
+                performers. His conducting repertoire includes major choral-orchestral works such as Handel’s Messiah and 
+                Dixit Dominus, J.S. Bach’s Magnificat, Vivaldi’s Gloria, Mozart’s Exsultate, jubilate, Rutter’s Gloria, and 
+                Corigliano’s Fern Hill. Justin has also served as a clinician for high school and university choirs, 
+                including those at the University of North Georgia, Georgia Institute of Technology, the Georgia Youth 
+                Symphony Orchestras, and Atlanta Young Singers. He has participated in masterclasses with renowned conductors 
+                and pedagogues including Joseph Flummerfelt, Andrew Megill, Eugene Rogers, Jeffrey Douma, Jason Max Ferdinand, 
+                Amanda Quist, and William Weinert.
+              </p>
+              <p>
+                He holds master’s degrees in Choral Conducting, Piano Performance, and Medical Sciences from Georgia State 
+                University, where he was awarded the Robert Shaw Choral Scholar Award and the Stegner Piano Scholarship. Justin 
+                views music as a dynamic force that bridges the vast and the personal, offering a unique way to express what 
+                words cannot. He believes that the essence of music lies in the authenticity of its performers, with the human 
+                condition being the key element that gives depth to the art.
               </p>
             </div>
           </div>
