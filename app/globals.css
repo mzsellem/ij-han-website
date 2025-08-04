@@ -23,10 +23,19 @@ body {
   overscroll-behavior: none; /* Prevent scroll chaining */
 }
 
+/* Set a background image on the page body when on Home */
 body.home-background {
-  background: url('/ij-chorus-conduct.jpg') no-repeat center center fixed;
+  background-image: url('/ij-chorus-conduct.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* keeps background fixed */
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
 }
+
+
 
 
 .main-container {

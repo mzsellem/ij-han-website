@@ -2,9 +2,18 @@
 import React, { useEffect, useState } from "react";
 
 const images = [
-  "ij-serious-baton.png",
-  "ij-hold-piano.png",
-  "ij-baton-head.png",
+  {
+    src: "ij-serious-baton.png",
+    alt: "Justin Han conducting with baton in serious pose",
+  },
+  {
+    src: "ij-hold-piano.png",
+    alt: "Justin Han holding piano sheet music",
+  },
+  {
+    src: "ij-baton-head.png",
+    alt: "Close-up of Justin Han with baton",
+  },
 ];
 
 const testimonials = [
@@ -13,7 +22,7 @@ const testimonials = [
       "The group's new conductor, Justin Han, is taking the group in an exciting direction in his inaugural year. [He is] young, talented and ambitious.",
     author: {
       name: "Flagpole Magazine Athens, GA",
-      link: "https://flagpole.com/music/music-features/2025/05/07/new-director-of-athens-master-chorale-brings-fresh-voices-and-concepts/?fbclid=IwY2xjawKPJW5leHRuA2FlbQIxMQBicmlkETExZ3NqUWJ3ME9nR1J0SHU0AR5xuhUpUVQXq4j3vlhNOEDgXuw1SOQOndUvsrgz2zItm9K50jTq-1lWR30PXg_aem_otdnw9aqmj2p7yEYSalfqg",
+      link: "https://flagpole.com/music/music-features/2025/05/07/new-director-of-athens-master-chorale-brings-fresh-voices-and-concepts",
     },
   },
   {
@@ -34,72 +43,87 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // start fade out
+      setFade(false);
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % images.length);
-        setFade(true); // fade in new image
-      }, 3000); // fade out duration
-    }, 3000);
+        setFade(true);
+      }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
-  // Add custom background class to body only on this page
-  document.body.classList.add("home-background");
-
-  return () => {
-    // Remove it when leaving this page
-    document.body.classList.remove("home-background");
-  };
-}, []);
+    document.body.classList.add("home-background");
+    return () => {
+      document.body.classList.remove("home-background");
+    };
+  }, []);
 
   return (
-    <> 
-    <main className="sm:ml-56 flex flex-col justify-center items-center p-15">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-10 sm:px-12 py-8 max-w-7xl">
-        {/* Left column: Image Fade Carousel */}
-        <div className="flex flex-col items-center">
-          <h1 className="text-4xl font-semibold mb-8">Justin "IJ" Han</h1>
-          <div className="w-full max-w-md rounded-2xl">
-            <img
-              key={currentIndex}
-              src={images[currentIndex]}
-              alt="Three Scrolling pictures of Justin"
-              className={`w-full h-full object-cover rounded-2xl transition-opacity duration-3000 ${
-                fade ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          </div>
-        </div>
+    <>
+    <div className="relative min-h-screen w-full">
+      {/* HERO SECTION */}
+      <section
+        aria-label="Hero Section"
+        className="relative z-10 flex items-start justify-start h-screen text-center px-6"
+      >
+        {/* Optional translucent overlay to keep text readable */}
+        <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-        {/* Right column: Text */}
-        <div className="sm:w-1/2 w-full flex flex-col space-y-8 text-xl sm:text-left text-center">
-          <h1 className="text-3xl font-semibold mb-4 border-b-2 border-white w-full pb-2 inline-block">
-            Testimonials
-          </h1>
+        <h1 className="relative z-10 text-white text-5xl md:text-7xl font-bold drop-shadow-lg mt-10 ml-66">
+          Justin "IJ" Han
+        </h1>
+      </section>
+
+      {/* TESTIMONIAL SECTION */}
+      <section
+        aria-label="Testimonials"
+        className="relative z-10 bg-white text-black max-w-6xl mx-auto px-6 py-16"
+      >
+        <h2 className="text-3xl font-semibold mb-8 border-b-2 border-gray-300">
+          Testimonials
+        </h2>
+        <div className="space-y-10 text-lg">
           {testimonials.map(({ quote, author }, idx) => (
-          <div key={idx}>
-            <p className="mb-2">{quote}</p>
-            <p className="text-center sm:text-left">
-              {author.link ? (
-              <a
-              href={author.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-              >
-              - {author.name}
-              </a>
-              ) : (
-              <>- {author.name}</>
-            )}
-            </p>
-          </div>
-        ))}
+            <div key={idx}>
+              <p className="mb-2">“{quote}”</p>
+              <p>
+                {author.link ? (
+                  <a
+                    href={author.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-blue-700 focus:outline focus:outline-2 focus:outline-blue-500"
+                  >
+                    - {author.name}
+                  </a>
+                ) : (
+                  <>- {author.name}</>
+                )}
+              </p>
+            </div>
+          ))}
         </div>
+      </section>
+
+      {/* SLIDESHOW SECTION */}
+      <section
+        aria-label="Image Slideshow"
+        className="relative z-10 bg-gray-100 max-w-4xl mx-auto px-6 py-16"
+      >
+        <div className="w-full max-w-xl rounded-2xl overflow-hidden shadow-lg">
+          <img
+            key={currentIndex}
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
+            className={`w-full h-auto object-cover transition-opacity duration-1000 ease-in-out ${
+              fade ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        </div>
+      </section>
       </div>
-      </main>
-      </>
+    </>
   );
 }
