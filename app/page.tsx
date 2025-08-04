@@ -71,7 +71,7 @@ export default function Home() {
         {/* Optional translucent overlay to keep text readable */}
         <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-        <h1 className="relative z-10 text-white text-5xl md:text-7xl font-bold drop-shadow-lg sm:mt-10 sm:ml-66">
+        <h1 className="relative z-10 text-white text-5xl md:text-7xl font-bold drop-shadow-lg sm:mt-8 sm:ml-66">
           Justin "IJ" Han
         </h1>
       </section>
