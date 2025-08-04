@@ -23,20 +23,26 @@ body {
   overscroll-behavior: none; /* Prevent scroll chaining */
 }
 
-/* Set a background image on the page body when on Home */
-body.home-background {
+.home-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   background-image: url('/ij-chorus-conduct.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;  /* keeps background fixed */
-  height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
+  z-index: -1;
 }
 
-
-
+@media (min-width: 768px) {
+  .home-background::before {
+    left: 100px;
+    width: calc(100% - 100px);
+  }
+}
 
 .main-container {
   overscroll-behavior-y: contain;

@@ -62,29 +62,27 @@ export default function Home() {
 
   return (
     <>
-    <div className="relative min-h-screen w-full">
+    <div className="relative min-h-screen w-full overflow-hidden">
       {/* HERO SECTION */}
       <section
         aria-label="Hero Section"
-        className="relative z-10 flex items-start sm:justify-start justify-center h-screen text-center px-6 mt-6"
+        className="relative z-10 flex items-start sm:justify-start justify-center h-screen w-full text-center"
       >
         {/* Optional translucent overlay to keep text readable */}
         <div className="absolute inset-0 bg-black/40 z-0"></div>
 
         <h1 className="relative z-10 text-white text-5xl md:text-7xl font-bold drop-shadow-lg sm:mt-8 sm:ml-66">
-          Justin "IJ" Han
+          Justin Han
         </h1>
       </section>
 
       {/* TESTIMONIAL SECTION */}
       <section
         aria-label="Testimonials"
-        className="relative z-10 bg-white text-black max-w-6xl mx-auto px-6 py-16"
+        className="relative z-10 text-white px-6 py-16 text-left w-full mx-auto"
+        style={{ backgroundColor: '#001f3f' }}
       >
-        <h2 className="text-3xl font-semibold mb-8 border-b-2 border-gray-300">
-          Testimonials
-        </h2>
-        <div className="space-y-10 text-lg">
+        <div className="space-y-10 text-2xl w-2/3 mx-auto">
           {testimonials.map(({ quote, author }, idx) => (
             <div key={idx}>
               <p className="mb-2">“{quote}”</p>
@@ -94,7 +92,7 @@ export default function Home() {
                     href={author.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline text-blue-700 focus:outline focus:outline-2 focus:outline-blue-500"
+                    className="underline text-blue-700 focus:outline focus:outline-blue-500"
                   >
                     - {author.name}
                   </a>
@@ -110,9 +108,9 @@ export default function Home() {
       {/* SLIDESHOW SECTION */}
       <section
         aria-label="Image Slideshow"
-        className="relative z-10 bg-gray-100 max-w-4xl mx-auto px-6 py-16"
+        className="relative z-10 bg-gray-100 w-full mx-auto px-6 py-16"
       >
-        <div className="w-full max-w-xl rounded-2xl overflow-hidden shadow-lg">
+        <div className="max-w-xl rounded-2xl overflow-hidden shadow-lg mx-auto">
           <img
             key={currentIndex}
             src={images[currentIndex].src}
