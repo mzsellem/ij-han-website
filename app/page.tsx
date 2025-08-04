@@ -44,6 +44,16 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+  // Add custom background class to body only on this page
+  document.body.classList.add("home-background");
+
+  return () => {
+    // Remove it when leaving this page
+    document.body.classList.remove("home-background");
+  };
+}, []);
+
   return (
     <> 
     <main className="sm:ml-56 flex flex-col justify-center items-center p-15">
