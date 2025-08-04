@@ -5,12 +5,16 @@ const events = [
   {
     title: 'Spring Concert',
     datetime: 'March 15, 2025 at 7:00 PM',
+    role: 'Conductor',
+    location: 'Athens, GA',
     description: 'Join us for a beautiful evening of classical choral music featuring works by Mozart and Rutter.',
     image: '/concert.jpg',
   },
   {
     title: 'Masterclass with Dr. Smith',
     datetime: 'April 10, 2025 at 3:00 PM',
+    role: 'Guest Artist',
+    location: 'Emory University, Atlanta, GA', 
     description: 'An interactive piano masterclass hosted by guest artist Dr. Linda Smith.',
     image: '/masterclass.jpg',
   },
@@ -40,8 +44,10 @@ const events = [
 
             {/* Text Content */}
             <div className="w-full sm:w-2/3">
-              <h2 className="text-2xl font-semibold mb-2">{event.title}</h2>
-              <p className="text-sm italic mb-4">{event.datetime}</p>
+              <h2 className="text-2xl font-semibold">{event.title}</h2>
+              <p className="text-sm italic">{event.datetime}</p>
+              <p className="text-sm italic mb-2">{event.location}</p>
+              <p className="text-sm italic mb-2">{event.role}</p>
               <p className="text-base">{event.description}</p>
             </div>
           </div>
