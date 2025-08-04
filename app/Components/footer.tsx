@@ -6,7 +6,7 @@ export default function Footer() {
       <ul className="flex space-x-3 items-center text-[#333]">
         <li>
           <a
-            href="https://www.youtube.com/@justinhan7547"
+            href="https://www.youtube.com/@maestro.justinhan"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
