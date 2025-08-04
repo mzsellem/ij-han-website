@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <ul className="flex space-x-3 items-center text-[#333]">
         <li>
           <a
@@ -81,6 +81,9 @@ export default function Footer() {
           </a>
         </li>
       </ul>
+      <div className="text-[#333] text-xs mt-4">
+        &copy; {new Date().getFullYear()} IJ Han
+      </div>
     </div>
   );
 }

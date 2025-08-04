@@ -27,7 +27,7 @@ export default function SidebarNav() {
       </div>
 
       {/* Sidebar - Desktop */}
-      <aside className="hidden sm:flex fixed top-0 left-0 h-screen w-54 bg-white/80 backdrop-blur-lg shadow-lg px-6 py-8 flex-col justify-between font-serif z-40">
+      <aside className="hidden sm:flex fixed top-0 left-0 h-screen w-56 bg-white/80 backdrop-blur-lg shadow-lg px-6 py-8 flex-col justify-between text-center font-serif z-40">
         <div>
           <nav className="space-y-6 text-lg">
             {navLinks.map((link) => (
