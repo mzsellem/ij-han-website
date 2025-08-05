@@ -15,13 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className="min-h-screen font-[family-name:var(--font-geist-sans)] flex flex-col items-center"
-      >
-        <div className="w-full"> <Navbar /> </div>
-        <main className="flex-1 w-full flex flex-col items-center">
+      <body className="min-h-screen flex flex-col bg-[var(--background)]">
+        {/* Sidebar Navbar */}
+        <Navbar />
+        {/* Main Content */}
+        <div className="flex-1 w-full ml-0 sm:ml-56">
           {children}
-        </main>
+        </div>
+        {/* Optional: Footer outside sidebar */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
