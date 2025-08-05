@@ -73,7 +73,7 @@ export default function SidebarNav() {
           </div>
 
           {/* Mobile Footer */}
-          <div className="mt-10">
+          <div className="mt-10 flex justify-start">
             <Footer />
           </div>
         </div>
