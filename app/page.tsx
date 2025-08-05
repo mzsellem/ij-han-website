@@ -79,7 +79,7 @@ export default function Home() {
       {/* TESTIMONIAL SECTION */}
       <section
         aria-label="Testimonials"
-        className="relative z-10 text-white px-6 py-16 text-left w-full mx-auto"
+        className="relative z-10 text-white py-16 text-center w-full mx-auto"
         style={{ backgroundColor: '#001f3f' }}
       >
         <div className="space-y-10 text-2xl w-2/3 mx-auto">
