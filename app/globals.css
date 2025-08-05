@@ -9,9 +9,9 @@
 }
 
 :root {
-  --background: #001f3f; /* Navy blue background */
-  --navbar-footer-bg: #d3d3d3; /* Light grey for navbar and footer */
-  --foreground: #ffffff; /* White text for contrast */
+  --background: rgba(0, 31, 63, 0.9); /* Navy blue with 90% opacity */
+  --navbar-footer-bg: #d3d3d3; /* Light grey */
+  --foreground: #ffffff; /* White text */
 }
 
 body {

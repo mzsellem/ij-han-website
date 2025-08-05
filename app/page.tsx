@@ -80,7 +80,7 @@ export default function Home() {
       <section
         aria-label="Testimonials"
         className="relative z-10 text-white py-16 text-left w-full mx-auto"
-        style={{ backgroundColor: '#001f3f' }}
+        style={{ backgroundColor: 'rgba(0, 31, 63, 0.9)' }}
       >
         <div className="space-y-10 text-2xl w-2/3 mx-auto">
           {testimonials.map(({ quote, author }, idx) => (
