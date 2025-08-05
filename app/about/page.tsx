@@ -13,7 +13,7 @@ export default function AboutPage() {
             />
             </div>
             <div className="flex flex-col justify-center items-center sm:w-1/2 space-y-5">
-              <h1 className="text-left text-3xl font-semibold mb-6 border-b-2 border-white w-1/3 pb-2 inline-block">
+              <h1 className="text-center text-3xl font-semibold mb-6 border-b-2 border-white w-1/3 pb-2 inline-block">
               About Me
               </h1>
               <p>
