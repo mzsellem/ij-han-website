@@ -15,11 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-[var(--background)]">
+      <body className="min-h-screen flex bg-[var(--background)]">
         {/* Sidebar Navbar */}
-        <Navbar />
+          <Navbar />
         {/* Main Content */}
-        <div className="flex-1 w-full ml-0 sm:ml-56">
+        <div className="flex-1 ml-0 sm:ml-56 overflow-x-hidden">
           {children}
         </div>
         {/* Optional: Footer outside sidebar */}
