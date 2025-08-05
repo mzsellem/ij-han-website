@@ -22,7 +22,7 @@ const events = [
   ];
 
     return (
-    <main className="sm:ml-64 flex justify-center p-8 min-h-screen">
+    <main className="flex justify-center p-8 min-h-screen">
       <div className="min-h-screen px-4 py-8 font-[family-name:var(--font-geist-sans)]">
       <h1 className="text-3xl font-bold text-center mb-8 border-b-2 border-white w-fit mx-auto pb-2">
         Upcoming Events

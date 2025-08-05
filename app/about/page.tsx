@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutPage() {
     return (
-      <main className="flex items-center justify-center sm:ml-64 px-6 py-10 min-h-screen">
+      <main className="flex items-center justify-center px-6 py-10 min-h-screen">
         <div className="flex flex-col items-center gap-y-4 text-xl sm:text-left text-center px-4">
           <div className="sm:flex-row flex flex-col sm:space-x-17 space-y-6">
             <div className="flex justify-center sm:w-1/2 w-full">
