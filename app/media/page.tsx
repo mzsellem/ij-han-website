@@ -49,7 +49,7 @@ function VideoGrid({ videos }: { videos: { id: string; title: string }[] }) {
             allowFullScreen
           ></iframe>
           </div>
-          <p className="text-sm text-white p-2 bg-[#001f3f]">{video.title}</p>
+          <p className="text-sm text-white p-4 bg-black">{video.title}</p>
         </div>
       ))}
     </div>
