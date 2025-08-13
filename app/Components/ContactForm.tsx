@@ -28,43 +28,77 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center space-y-10 mt-14">
-      <h1 className="text-3xl">Contact</h1>
-      <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto p-4 border rounded-2xl bg-white/80 text-[rgba(0,31,63,0.9)]">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="border p-2 w-full text-[rgba(0,31,63,0.9)] rounded-lg"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="border p-2 w-full text-[rgba(0,31,63,0.9)] rounded-lg"
-        />
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows={5}
-          value={formData.message}
-          onChange={handleChange}
-          required
-          className="border p-2 w-full text-[rgba(0,31,63,0.9)] rounded-lg"
-        />
+     <div className="flex flex-col justify-center items-center space-y-10 mt-16">
+      {/* Header */}
+      <h1 className="text-3xl font-semibold tracking-wide border-b-2 border-white w-fit pb-2">
+        Contact
+      </h1>
+
+      {/* Form */}
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-5 max-w-md w-full p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-lg border border-white/50"
+      >
+        {/* Name */}
+        <div>
+          <label className="block text-sm font-medium text-[#001f3f]/90 mb-1">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="John Smith"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 p-3 w-full text-[#001f3f] rounded-lg shadow-sm outline-none transition-all"
+          />
+        </div>
+
+        {/* Email */}
+        <div>
+          <label className="block text-sm font-medium text-[#001f3f]/90 mb-1">Your Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 p-3 w-full text-[#001f3f] rounded-lg shadow-sm outline-none transition-all"
+          />
+        </div>
+
+        {/* Message */}
+        <div>
+          <label className="block text-sm font-medium text-[#001f3f]/90 mb-1">Message</label>
+          <textarea
+            name="message"
+            placeholder="Write your message..."
+            rows={5}
+            value={formData.message}
+            onChange={handleChange}
+            required
+            className="border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 p-3 w-full text-[#001f3f] rounded-lg shadow-sm outline-none transition-all resize-none"
+          />
+        </div>
+
+        {/* Submit Button */}
         <button
           type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all"
         >
-          Send
+          Send Message
         </button>
-        {status && <p className="mt-2">{status}</p>}
+
+        {/* Status */}
+        {status && (
+          <p
+            className={`mt-2 text-sm ${
+              status.startsWith("✅") ? "text-green-600" : status.startsWith("❌") ? "text-red-600" : "text-gray-600"
+            }`}
+          >
+            {status}
+          </p>
+        )}
       </form>
     </div>
   );
