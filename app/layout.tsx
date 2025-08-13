@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
-import Navbar from "./Components/navbar";
+import Navbar from "./Components/Navbar";
 
 export const metadata: Metadata = {
   title: "IJ-Han-Website",

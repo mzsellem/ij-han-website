@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const navLinks = [
   { name: "Home", href: "/" },
