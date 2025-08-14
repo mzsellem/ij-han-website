@@ -32,22 +32,22 @@ const pianoVideos = [
 
 function VideoGrid({ videos }: { videos: { id: string; title: string }[] }) {
   return (
-    <div className="flex flex-wrap gap-6">
+    <div className="flex flex-wrap justify-center gap-6">
       {videos.map((video, index) => (
         <div
           key={index}
-          className="rounded-2xl overflow-hidden w-[360px]"
+          className="rounded-2xl overflow-hidden w-[360px] max-w-full"
         >
-          <div className="">
-          <iframe
-            width="360"
-            height="215"
-            src={`https://www.youtube.com/embed/${video.id}`}
-            title={video.title}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          {/* Aspect ratio container */}
+          <div className="relative w-full pb-[56.25%]"> {/* 16:9 ratio */}
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src={`https://www.youtube.com/embed/${video.id}`}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <p className="text-sm text-white p-4 bg-black">{video.title}</p>
         </div>
@@ -58,20 +58,19 @@ function VideoGrid({ videos }: { videos: { id: string; title: string }[] }) {
 
 export default function MediaPage() {
   return (
-    <main className="flex justify-center p-8 min-h-screen">
-      <div className="min-h-screen px-4 py-8 font-[family-name:var(--font-geist-sans)]">
-        <h1 className="text-3xl font-bold text-center mb-8 border-b-2 border-white w-fit mx-auto pb-2">
+    <main className="p-8 min-h-screen">
+      <div className="flex flex-col min-h-screen px-4 py-8 font-[family-name:var(--font-geist-sans)]">
+        <h1 className="text-3xl font-bold mb-8 border-b-2 border-white w-fit mx-auto pb-2">
           Media
         </h1>
-
         {/* Conducting Section */}
-        <div className="mb-10 space-y-4">
+        <div className="flex flex-col items-center mb-10 space-y-4">
           <h2 className="text-2xl">Conducting</h2>
           <VideoGrid videos={conductingVideos} />
         </div>
 
         {/* Piano Section */}
-        <div className="space-y-4">
+        <div className="flex flex-col items-center space-y-4">
           <h2 className="text-2xl">Piano</h2>
           <VideoGrid videos={pianoVideos} />
         </div>
