@@ -80,9 +80,12 @@ export default function Footer() {
             </svg>
           </a>
         </li>
-      </ul>
+      </ul>   
       <div className="text-[#333] text-xs mt-4">
-        &copy; {new Date().getFullYear()} IJ Han
+        <h1>Design by Marley Sellem</h1>
+        <h1>
+          &copy; {new Date().getFullYear()} 
+        </h1>
       </div>
     </div>
   );
